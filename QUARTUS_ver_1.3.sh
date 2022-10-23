@@ -18,14 +18,14 @@ Help () {
 ############################################################
 	echo "|Template for launch script for one pair CDF-file - #programmer:"
 	echo "|-------------------------------------------------------------------"
-	echo "|Syntax 	: " "QUARTUS_ver_$ver <path to CDF-file> <# of programmer>" 
-	echo "|EXAMPLE 	: " "sudo QUARTUS_ver_$ver /CDF-files/test.cdf 3"
+	echo "|Syntax 	: " "QUARTUS_ver_$ver.sh <path to CDF-file> <# of programmer>" 
+	echo "|EXAMPLE 	: " "sudo QUARTUS_ver_$ver.sh /CDF-files/test.cdf 3"
 	echo "|-------------------------------------------------------------------"
 	echo
 	echo "|Template for launch script for N pairs of CDF-file - #programmer:"
 	echo "|-------------------------------------------------------------------"
-	echo "|Syntax 	: " "QUARTUS_ver_$ver <1-path to CDF-file> <# of programmer for pair> ... <N-path to CDF-file> <# of programmer for N-pair>"
-	echo "|EXAMPLE 	: " "sudo QUARTUS_ver_$ver /scripts/CDF-files/test.cdf 1 /scripts/CDF-files/test1.cdf 0"
+	echo "|Syntax 	: " "QUARTUS_ver_$ver.sh <1-path to CDF-file> <# of programmer for pair> ... <N-path to CDF-file> <# of programmer for N-pair>"
+	echo "|EXAMPLE 	: " "sudo QUARTUS_ver_$ver.sh /scripts/CDF-files/test.cdf 1 /scripts/CDF-files/test1.cdf 0"
 	echo "|-------------------------------------------------------------------"
 }
 searching_kaktus_prime () {
