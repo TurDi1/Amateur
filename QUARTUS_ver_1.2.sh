@@ -1,5 +1,6 @@
 #!/bin/bash
-# Версия скрипта 1.2 от 24.10.22 00:20
+ver="1.2"
+# Версия скрипта 1.2 от 24.10.22 01:42
 # Переменные цветов
 red=$'\e[1;31m'
 green=$'\e[1;32m'
@@ -15,15 +16,17 @@ Help () {
 ############################################################
 # Help-функция для помощи пользователю в освоении скрипта  #
 ############################################################
-   echo "Add description of the script functions here."
-   echo
-   echo "Syntax: scriptTemplate [-g|h|v|V]"
-   echo "options:"
-   echo "g     Print the GPL license notification."
-   echo "h     Print this Help."
-   echo "v     Verbose mode."
-   echo "V     Print software version and exit."
-   echo
+	echo "|Template for launch script for one pair CDF-file - #programmer:"
+	echo "|-------------------------------------------------------------------"
+	echo "|Syntax 	: " "QUARTUS_ver_$ver <path to CDF-file> <# of programmer>" 
+	echo "|EXAMPLE 	: " "sudo QUARTUS_ver_$ver /CDF-files/test.cdf 3"
+	echo "|-------------------------------------------------------------------"
+	echo
+	echo "|Template for launch script for N pairs of CDF-file - #programmer:"
+	echo "|-------------------------------------------------------------------"
+	echo "|Syntax 	: " "QUARTUS_ver_$ver <1-path to CDF-file> <# of programmer for pair> ... <N-path to CDF-file> <# of programmer for N-pair>"
+	echo "|EXAMPLE 	: " "sudo QUARTUS_ver_$ver /scripts/CDF-files/test.cdf 1 /scripts/CDF-files/test1.cdf 0"
+	echo "|-------------------------------------------------------------------"
 }
 searching_kaktus_prime () {
 	# Проверим нет ли в директории со скриптом конфига с записанными переменными
